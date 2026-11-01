@@ -19,6 +19,37 @@ shader-cache/
 shader/
 *.tik
 *.cert
+*.ncz
+*.kip
+*.npdm
+*.nacp
+*.pfs0
+*.hfs0
+exefs/
+romfs/
+title-pack/
+# Extracted game data formats
+*.zs
+*.sarc
+*.bfres
+*.bntx
+*.byml
+*.bgyml
+*.bars
+# Captures, traces and dumps (may show game content or machine details)
+*.gputrace
+*.trace
+*.mov
+*.mp4
+*.mkv
+*.edid
+*.dmp
+shader-dump/
+# Credentials
+*.pem
+*.p12
+*.key
+*.mobileprovision
 
 # --- Tooling ---
 node_modules/

@@ -1,0 +1,39 @@
+{
+  "name": "totk-luma-demo",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Visual scope demo for the TOTK Luma Mac app. All gameplay and telemetry are simulated.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite --port 5199 --strictPort",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --port 5199 --strictPort",
+    "typecheck": "tsc -b --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "e2e": "playwright test",
+    "screenshots": "playwright test --config playwright.screenshots.config.ts",
+    "build:single": "npm run build && node scripts/inline-build.mjs"
+  },
+  "dependencies": {
+    "react": "19.2.9",
+    "react-dom": "19.2.9"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1",
+    "@types/node": "24.19.2",
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.7",
+    "@vitejs/plugin-react": "6.1.2",
+    "eslint": "10.12.0",
+    "eslint-plugin-react-hooks": "7.1.1",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.71.2",
+    "vite": "8.3.4",
+    "vitest": "5.0.4"
+  }
+}
